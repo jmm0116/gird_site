@@ -130,17 +130,24 @@ a, a:hover {text-decoration: none;}
     section article .cont:nth-child(4), section article .cont:nth-child(9),section article .cont:nth-child(13), section article .cont:nth-child(12){
         display:none;
     }
-
+    section article .cont .yellowBg .centerbox .txt_box{
+        padding: 15px 5px;
+    }
     section article .cont .yellowBg .centerbox .txt_box h3{
-        font-size: 18px;
+        font-size: 14px;
+        
+    }
+    section article .cont .yellowBg .centerbox .txt_box > h5{
+        font-size: 10px;
     }
     section article .cont:nth-child(1) .yellowBg .centerbox .txt_box a{
     margin: 20px auto 0;
     }
-    
+    section article .cont .yellowBg .centerbox .txt_box a{
+        width: 15px;
+        height: 15px;
+    }
 }
-
-
 @media (max-width:767px){
     header{
         height: 100vh;
@@ -177,10 +184,6 @@ a, a:hover {text-decoration: none;}
         display: flex;
         flex-direction: column;
     
-    }
-    header .wrap nav > ul > li{
-        
-        
     }
     header .wrap nav > ul > li > a{
         padding: 10px 0;
@@ -220,6 +223,9 @@ a, a:hover {text-decoration: none;}
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows:  repeat(4, 1fr);
     }
+    section article .cont{
+        height: calc(100 / 4);
+    }
     section article .cont:nth-child(2){
         grid-column: 2/3;
         grid-row: 1/2;
@@ -245,7 +251,6 @@ a, a:hover {text-decoration: none;}
         grid-row: 4/5;
     }
 
-    /* section article .cont:nth-child(6),  */
     section article .cont:nth-child(8),
     section article .cont:nth-child(10),
     section article .cont:nth-child(14){
@@ -255,6 +260,14 @@ a, a:hover {text-decoration: none;}
     section article .cont:nth-child(1) .yellowBg .centerbox {
         width:100%
     }
+
+    section article .cont .yellowBg .centerbox .txt_box h3{
+        font-size: 12px;
+        
+    }
+    section article .cont .yellowBg .centerbox .txt_box > h5{
+        font-size: 9px;
+    }    
     footer{
         width:100%; 
         height:50px; 
@@ -263,8 +276,6 @@ a, a:hover {text-decoration: none;}
         display: block;
         position: relative;
         background:#777;
-  
-        
     }
     footer .footer_txt{
         line-height: 30px;
