@@ -14,17 +14,21 @@ header{
     left: 0;
     width: 270px;
     height: 100%;
-    background-color: #6ab3b2;
+    background-color: #eee;
     
 }
 header .wrap{
-    background-color: #6ab3b2;
+    background-color: #eee;
     height: 100%;
     position: relative;
 }
 header .wrap .logo{
     text-align: center;
     padding-top: 70px;
+}
+
+header .wrap .logo > a > img{
+    width: 200px;
 }
 
 header .wrap nav{
@@ -36,19 +40,20 @@ header .wrap nav{
 }
 header .wrap nav > ul{}
 header .wrap nav > ul > li{
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid #777;
 }
 header .wrap nav > ul > li:nth-child(1){
-    border-top: 1px solid #fff;
+    border-top: 1px solid #777;
 }
 header .wrap nav > ul > li > a{
-    color: #fff;
+    color: #777;
     display: block;
     padding: 20px 0;
+    font-weight: bold;
 }
 header .wrap nav > ul > li > a:hover{
-    background-color: #fff;
-    color: #6ab3b2;
+    /* background-color: #6C89D6; */
+    color: #6C89D6;
 }
 header .wrap nav > ul > li > ul{
     display: none;
@@ -57,21 +62,14 @@ header .wrap nav > ul > li > ul{
 
 
 header .wrap .sns{
-    /* border: 1px solid #000; */
     width: 50%;
     position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
-/* 
-    position: absolute;
-    bottom: 50px;
-    transform : translate(-50%, -50%);
-    bottom: 10px;
-    left: 50%; */
 }
 header .wrap .sns h5{
-    color: #fff;
+    color: #6C89D6;
     text-align: center;
     margin-bottom: 5px;
     }
@@ -152,7 +150,7 @@ section article .cont:nth-child(14) {
 section article .cont .yellowBg{
     width: 100%;
     height:100%;
-    background-color: rgba(255,170,0,0.8);
+    background-color: rgba(255,255,255,0.8);
     opacity: 0;
     transition:all 1s;
 }
@@ -162,8 +160,7 @@ section article .cont .yellowBg .centerbox{
     width:100%; height:100%; 
     display:table; 
     position:relative; 
-    /* overflow:hidden; */
-    color: #fff;
+    color: #333;
     
 }
 section article .cont .yellowBg .centerbox .txt_box{
@@ -175,36 +172,28 @@ section article .cont .yellowBg .centerbox .txt_box{
 }
 section article .cont .yellowBg .centerbox .txt_box h3{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1;
-    padding: 10px 0 10px 0;
+    padding: 5px 0;
+    color: #666;
 }
-
-/* 첫번쨰 이미지 p태그 */
-section article .cont .yellowBg .centerbox .txt_box p{
-    font-size:12px; 
-    color:#fff; 
-    line-height:1; 
-    padding-bottom:10px;
-    margin-top: 10px;
-    
+section article .cont .yellowBg .centerbox .txt_box > h5{
+    font-size: 10px;
+    color: #666;
 }
-
 section article .cont .yellowBg .centerbox .txt_box .line{
-    /* position: absolute; */
-    background-color: #fff;
+    background-color: #6c88d5;
     margin: 0 auto;
     width: 100px;
-    height: 3px;
+    height: 2px;
     margin-top: 10px;
-    
 }
 
 section article .cont .yellowBg .centerbox .txt_box a{
     margin: 20px auto 0;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -213,20 +202,6 @@ section article .cont .yellowBg .centerbox .txt_box a{
     align-items: center;
     transition:transform 1s;
     transform: translateY(500%);
-/*
-    display:block; 
-    width:40px; 
-    height:40px; 
-    border-radius:50%; 
-    background:#fff; 
-    text-align:center;
-    padding-top:8px; 
-    margin:0 auto; 
-    position:absolute; 
-    bottom:-60px; 
-    transition:all 1s; 
-    left:calc(50% - 20px);
-*/
 }
 section article .cont:hover .yellowBg{
     opacity: 1;
